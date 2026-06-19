@@ -23,6 +23,30 @@
 
       </createTable>
 
+      <createTable tableName="solicitacao_autorizacao">
+
+         <column name="id" type="BIGINT" autoIncrement="true">
+            <constraints primaryKey="true" />
+         </column>
+
+         <column name="procedimento" type="INT">
+            <constraints nullable="false" />
+         </column>
+
+         <column name="idade" type="INT">
+            <constraints nullable="false" />
+         </column>
+
+         <column name="sexo" type="VARCHAR(1)">
+            <constraints nullable="false" />
+         </column>
+
+         <column name="autorizado" type="BOOLEAN">
+            <constraints nullable="false" />
+         </column>
+
+      </createTable>
+
    </changeSet>
 
 </databaseChangeLog>

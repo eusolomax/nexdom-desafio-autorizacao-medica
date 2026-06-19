@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<databaseChangeLog
+   xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+   xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog https://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-latest.xsd">
+
+   <changeSet id="2" author="victor">
+
+      <insert tableName="regra_autorizacao">
+         <column name="procedimento" valueNumeric="1234" />
+         <column name="idade" valueNumeric="10" />
+         <column name="sexo" value="M" />
+         <column name="permitido" valueBoolean="false" />
+      </insert>
+
+      <insert tableName="regra_autorizacao">
+         <column name="procedimento" valueNumeric="4567" />
+         <column name="idade" valueNumeric="20" />
+         <column name="sexo" value="M" />
+         <column name="permitido" valueBoolean="true" />
+      </insert>
+
+      <insert tableName="regra_autorizacao">
+         <column name="procedimento" valueNumeric="6789" />
+         <column name="idade" valueNumeric="10" />
+         <column name="sexo" value="F" />
+         <column name="permitido" valueBoolean="false" />
+      </insert>
+
+      <insert tableName="regra_autorizacao">
+         <column name="procedimento" valueNumeric="6789" />
+         <column name="idade" valueNumeric="10" />
+         <column name="sexo" value="M" />
+         <column name="permitido" valueBoolean="true" />
+      </insert>
+
+      <insert tableName="regra_autorizacao">
+         <column name="procedimento" valueNumeric="1234" />
+         <column name="idade" valueNumeric="20" />
+         <column name="sexo" value="M" />
+         <column name="permitido" valueBoolean="true" />
+      </insert>
+
+      <insert tableName="regra_autorizacao">
+         <column name="procedimento" valueNumeric="4567" />
+         <column name="idade" valueNumeric="30" />
+         <column name="sexo" value="F" />
+         <column name="permitido" valueBoolean="true" />
+      </insert>
+   </changeSet>
+
+</databaseChangeLog>
