@@ -7,6 +7,8 @@ import java.sql.SQLException;
 public class ConnectionConfig {
 
     private static final String URL = "jdbc:h2:./database/autorizacao";
+    // private static final String URL = "jdbc:h2:file:./database/autorizacao";
+
     private static final String USER = "sa";
     private static final String PASSWORD = "";
 
