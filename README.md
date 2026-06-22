@@ -17,13 +17,24 @@
 
 ---
 
-## 1. Executar as migrations
+## Sobre as migrations
 O banco é gerado automaticamente durante a inicialização da aplicação usando o Liquibase, então não é necessário criar as tabelas manualmente
 
----
 
-## 2. Gerar o WAR
-Dentro da pasta root, rodar o comando:
+## 1. Clone o repositório
+
+```bash
+git clone https://github.com/eusolomax/nexdom-desafio-autorizacao-medica.git
+```
+
+## 2. Entre no diretório
+```bash
+cd nexdom-desafio-autorizacao-medica
+```
+
+
+## 3. Gerar o WAR
+Dentro da pasta, rode o comando:
 ```bash
 mvn clean package
 ```
@@ -35,20 +46,15 @@ target/autorizacao-medica.war
 
 ---
 
-## 3. Deploy no Tomcat
+## 4. Deploy no Tomcat
 
 Copiar o arquivo WAR para a pasta webapps do Tomcat:
 ```bash
-cp target/autorizacao-medica.war /opt/tomcat/webapps/
+sudo cp target/autorizacao-medica.war /opt/tomcat/<VERSAO>/webapps/
 ```
-
-Após isso, iniciar o Tomcat:
-```bash
-/opt/tomcat/bin/startup.sh
-```
-
 ---
-## 4. Acessar aplicação
+
+## 5. Acessar aplicação
 Tela principal:
 
 ```text
