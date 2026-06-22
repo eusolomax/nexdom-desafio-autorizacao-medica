@@ -1,4 +1,4 @@
-## Tecnologias
+# Tecnologias
 - Java 8
 - Maven
 - JSP
@@ -8,18 +8,21 @@
 - Liquibase
 - Tomcat 9
 
----
-
 ## Requisitos
 - Java 8
 - Maven 3.8+
-- Apache Tomcat 9 <a href="https://www.digitalocean.com/community/tutorials/install-tomcat-on-linux#how-to-install-tomcat-on-linux" target="_blank">(Instalar o Tomcat no Linux)</a>
+- Apache Tomcat 9
 
 ---
+## Aviso Tomcat
+Tutorial de <a href="https://www.digitalocean.com/community/tutorials/install-tomcat-on-linux#how-to-install-tomcat-on-linux" target="_blank">como instalar o Tomcat no Linux</a>
+1. A versão que o tutorial apresenta (**v9.0.34**) parece não existir mais no mirror da Apache, então substitua pela versão **v9.0.118**.
+2. No arquivo service, o tutorial mostra o environment do Java na versão 1.11.0; Se necessário, mude para a sua versão (em: **/usr/lib/jvm/**)
 
-## Sobre as migrations
+## Aviso sobre as migrations
 O banco é gerado automaticamente durante a inicialização da aplicação usando o Liquibase, então não é necessário criar as tabelas manualmente
 
+# Instalação:
 
 ## 1. Clone o repositório
 Após instalar o Tomcat no Linux, clone o repositório:
@@ -47,7 +50,6 @@ target/autorizacao-medica.war
 ---
 
 ## 4. Deploy no Tomcat
-
 Copiar o arquivo WAR para a pasta webapps do Tomcat:
 ```bash
 sudo cp target/autorizacao-medica.war /opt/tomcat/updated/webapps/
@@ -71,7 +73,9 @@ http://localhost:8080/autorizacao-medica/solicitacoes
 
 ---
 
-## Funcionalidades
+# Funcionalidades
+
+<img width="542" height="256" alt="image" src="https://github.com/user-attachments/assets/722ab0f1-f7bc-4cb9-b076-48324b1fd679" />
 
 ### Consulta de autorização
 
