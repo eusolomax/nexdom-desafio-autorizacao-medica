@@ -50,8 +50,9 @@ target/autorizacao-medica.war
 
 Copiar o arquivo WAR para a pasta webapps do Tomcat:
 ```bash
-sudo cp target/autorizacao-medica.war /opt/tomcat/<VERSAO>/webapps/
+sudo cp target/autorizacao-medica.war /opt/tomcat/updated/webapps/
 ```
+(Caso não tenha o symlink `updated` do Tomcat, substitua no path pela sua versão)
 ---
 
 ## 5. Acessar aplicação
