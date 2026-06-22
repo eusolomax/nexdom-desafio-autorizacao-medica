@@ -2,13 +2,21 @@ package br.com.nexdom.service;
 
 import br.com.nexdom.model.RegraAutorizacao;
 import br.com.nexdom.model.SolicitacaoAutorizacao;
-import br.com.nexdom.repository.RegraAutorizacaoRepository;
 import br.com.nexdom.repository.SolicitacaoAutorizacaoRepository;
+import br.com.nexdom.repository.RegraAutorizacaoRepository;
 
 public class AutorizacaoService {
 
-   private final RegraAutorizacaoRepository autorizacaoRepository = new RegraAutorizacaoRepository();
-   private final SolicitacaoAutorizacaoRepository solicitacaoRepository = new SolicitacaoAutorizacaoRepository();
+   private final RegraAutorizacaoRepository autorizacaoRepository;
+   private final SolicitacaoAutorizacaoRepository solicitacaoRepository;
+
+   public AutorizacaoService(
+         RegraAutorizacaoRepository autorizacaoRepository,
+         SolicitacaoAutorizacaoRepository solicitacaoRepository) {
+
+      this.autorizacaoRepository = autorizacaoRepository;
+      this.solicitacaoRepository = solicitacaoRepository;
+   }
 
    public boolean autorizar(
          Integer procedimento,

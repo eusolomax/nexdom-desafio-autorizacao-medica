@@ -1,5 +1,8 @@
 package br.com.nexdom.servlet;
 
+import br.com.nexdom.repository.RegraAutorizacaoRepository;
+import br.com.nexdom.repository.SolicitacaoAutorizacaoRepository;
+
 import br.com.nexdom.service.AutorizacaoService;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
@@ -10,7 +13,7 @@ import java.io.IOException;
 @WebServlet("/autorizacao")
 public class AutorizacaoServlet extends HttpServlet {
 
-        private final AutorizacaoService service = new AutorizacaoService();
+        private final AutorizacaoService service = new AutorizacaoService(new RegraAutorizacaoRepository(), new SolicitacaoAutorizacaoRepository());
 
         @Override
         protected void doPost(
