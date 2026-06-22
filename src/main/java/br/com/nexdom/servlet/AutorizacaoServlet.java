@@ -32,7 +32,7 @@ public class AutorizacaoServlet extends HttpServlet {
 
                 req.setAttribute(
                                 "resultado",
-                                autorizado ? "AUTORIZADO" : "NEGADO");
+                                autorizado ? "Procedimento autorizado!" : "Procedimento negado ou inexistente.");
 
                 req.getRequestDispatcher("/index.jsp")
                                 .forward(req, resp);
