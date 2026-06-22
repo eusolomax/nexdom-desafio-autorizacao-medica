@@ -6,7 +6,7 @@ import java.sql.SQLException;
 
 public class ConnectionConfig {
 
-    private static final String URL = "jdbc:h2:./database/autorizacao";
+    private static final String URL = "jdbc:h2:file:/tmp/autorizacao";
 
     private static final String USER = "nexdom";
     private static final String PASSWORD = "";

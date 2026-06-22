@@ -16,17 +16,18 @@ import java.sql.DriverManager;
 
 @WebListener
 public class LiquibaseInitializer
-            implements ServletContextListener {
-
+implements ServletContextListener {
+      
       @Override
       public void contextInitialized(
-                  ServletContextEvent sce) {
-
-            try {
+            ServletContextEvent sce) {
+                  
+                  try {
 
                   Class.forName("org.h2.Driver");
+
                   Connection connection = DriverManager.getConnection(
-                              "jdbc:h2:./database/autorizacao",
+                              "jdbc:h2:file:/tmp/autorizacao",
                               "nexdom",
                               "");
 

@@ -53,7 +53,7 @@ public class SolicitacaoAutorizacaoRepository {
 
             List<SolicitacaoAutorizacao> solicitacoes = new ArrayList<>();
 
-            String sql = "SELECT * FROM solicitacao_autorizacao";
+            String sql = "SELECT * FROM solicitacao_autorizacao ORDER BY id DESC";
 
             try (
                         Connection connection = ConnectionConfig.getConnection();
