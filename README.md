@@ -22,7 +22,7 @@ O banco é gerado automaticamente durante a inicialização da aplicação usand
 
 
 ## 1. Clone o repositório
-
+Após instalar o Tomcat no Linux, clone o repositório:
 ```bash
 git clone https://github.com/eusolomax/nexdom-desafio-autorizacao-medica.git
 ```
