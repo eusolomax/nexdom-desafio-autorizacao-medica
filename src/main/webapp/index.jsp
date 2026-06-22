@@ -2,6 +2,10 @@
 
 <html>
   <body>
+    <a href="solicitacoes">
+      Solicitações
+    </a>
+   
     <h2>Autorização Médica</h2>
 
     <form action="autorizacao" method="post">
